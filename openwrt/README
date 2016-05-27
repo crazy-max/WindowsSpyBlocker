@@ -1,1 +1,1 @@
-Router IP/DNS rules.
+DNS/IP block rules using dnsmasq/iptables, focused on latest OpenWrt release (Chaos Calmer 15.05.1).

@@ -98,7 +98,6 @@
 0.0.0.0 telecommand.telemetry.microsoft.com
 0.0.0.0 telecommand.telemetry.microsoft.com.nsatc.net
 0.0.0.0 telemetry.appex.bing.net
-0.0.0.0 telemetry.appex.bing.net:443
 0.0.0.0 telemetry.microsoft.com
 0.0.0.0 telemetry.urs.microsoft.com
 0.0.0.0 v10.vortex-win.data.metron.live.com.nsatc.net

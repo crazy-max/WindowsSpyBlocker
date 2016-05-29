@@ -1,4 +1,5 @@
 DNS/IP block rules using dnsmasq/iptables, focused on latest OpenWrt release (Chaos Calmer 15.05.1).
+opt-in approach: all 3 segments of hosts and IP ranges included, comment what you really need e.g: updates.
 
 Requires package "iptables-mod-nat-extra" for port 53 (DNS) redirect rule from dnsmasq.conf
 dnsmasq.conf is bypassed if you use dnscrypt on client machine (recommended) so use hosts before dnscrypt exit point.

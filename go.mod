@@ -10,7 +10,7 @@ require (
 	github.com/cevaris/ordered_map v0.0.0-20170213161328-531fd444821a
 	github.com/djherbis/times v1.0.1 // indirect
 	github.com/fatih/color v1.4.1
-	github.com/go-ole/go-ole v0.0.0-20170209151332-de8695c8edbf
+	github.com/go-ole/go-ole v0.1.0
 	github.com/hako/durafmt v0.0.0-20170214231336-83a6d8dc879e
 	github.com/josephspurrier/goversioninfo v0.0.0-20180220052333-42534847954b
 	github.com/kevinburke/go-bindata v3.11.0+incompatible

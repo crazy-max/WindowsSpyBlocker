@@ -13,7 +13,7 @@ require (
 	github.com/go-ole/go-ole v0.0.0-20170209151332-de8695c8edbf
 	github.com/hako/durafmt v0.0.0-20170214231336-83a6d8dc879e
 	github.com/josephspurrier/goversioninfo v0.0.0-20180220052333-42534847954b
-	github.com/kevinburke/go-bindata v3.11.0+incompatible
+	github.com/kevinburke/go-bindata v3.13.0+incompatible
 	github.com/mattn/go-colorable v0.0.9 // indirect
 	github.com/mattn/go-isatty v0.0.3 // indirect
 	github.com/mcuadros/go-version v0.0.0-20161105183618-257f7b9a7d87

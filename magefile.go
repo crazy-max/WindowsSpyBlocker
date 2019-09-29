@@ -46,12 +46,11 @@ func Build() error {
 	args = append(args, "build", "-o", wsbPath, "-v")
 	args = append(args, "-ldflags", flags())
 
-	fmt.Println("🏃 Go build...")
+	fmt.Println("⚙️ Go build...")
 	if err := sh.RunWith(wsbEnv, mg.GoCmd(), args...); err != nil {
 		return err
 	}
 
-	fmt.Println("✅ Go build")
 	return nil
 }
 
@@ -69,12 +68,11 @@ func Clean() error {
 // Go mod download
 func Download() error {
 
-	fmt.Println("🏃 Go mod download...")
+	fmt.Println("⚙️ Go mod download...")
 	if err := sh.RunWith(wsbEnv, mg.GoCmd(), "mod", "download"); err != nil {
 		return err
 	}
 
-	fmt.Println("✅ Go mod download")
 	return nil
 }
 
@@ -85,12 +83,11 @@ func Generate() error {
 	mg.Deps(manifest)
 	mg.Deps(versionInfo)
 
-	fmt.Println("🏃 Go generate...")
+	fmt.Println("⚙️ Go generate...")
 	if err := sh.RunV(mg.GoCmd(), "generate", "-v"); err != nil {
 		return err
 	}
 
-	fmt.Println("✅ Go generate")
 	return nil
 }
 
@@ -98,7 +95,7 @@ func Generate() error {
 func ChocoPack() error {
 	mg.Deps(ChocoPrepare)
 
-	fmt.Println("🏃 Chocolatey package...")
+	fmt.Println("⚙️ Chocolatey package...")
 	choco, err := exec.LookPath("choco")
 	if err != nil {
 		return err
@@ -114,13 +111,12 @@ func ChocoPack() error {
 		return err
 	}
 
-	fmt.Println("✅ Chocolatey package")
 	return nil
 }
 
 // Chocolatey prepare
 func ChocoPrepare() error {
-	fmt.Println("🏃 Chocolatey prepare...")
+	fmt.Println("🔨 Generating Chocolatey files...")
 
 	if err := createDir(chocoBinPath); err != nil {
 		return err
@@ -151,7 +147,6 @@ func ChocoPrepare() error {
 		return err
 	}
 
-	fmt.Println("✅ Chocolatey prepare")
 	return nil
 }
 
@@ -191,7 +186,7 @@ func hash() string {
 
 // appConf generates app.conf file
 func appConf() error {
-	fmt.Println("🏃 Genrating app.conf...")
+	fmt.Println("🔨 Generating app.conf...")
 
 	var tpl = template.Must(template.New("").Parse(`{
   "version": "{{ .Version }}",
@@ -251,7 +246,7 @@ func appConf() error {
 
 // manifest generates manifest for versioninfo
 func manifest() error {
-	fmt.Println("🏃 Generating app.manifest...")
+	fmt.Println("🔨 Generating app.manifest...")
 
 	file, err := os.Create("app.manifest")
 	if err != nil {
@@ -279,7 +274,7 @@ func manifest() error {
 
 // versionInfo generates versioninfo.json
 func versionInfo() error {
-	fmt.Println("🏃 Generating versioninfo.json...")
+	fmt.Println("🔨 Generating versioninfo.json...")
 
 	var tpl = template.Must(template.New("").Parse(`{
 	"FixedFileInfo":

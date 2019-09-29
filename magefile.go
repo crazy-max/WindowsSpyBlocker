@@ -57,10 +57,10 @@ func Build() error {
 
 // Remove files generated at build-time
 func Clean() error {
-	if err := createDir(bin); err != nil {
+	if err := createDir(binPath); err != nil {
 		return err
 	}
-	if err := cleanDir(bin); err != nil {
+	if err := cleanDir(binPath); err != nil {
 		return err
 	}
 	return nil

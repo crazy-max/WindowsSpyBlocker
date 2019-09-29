@@ -57,7 +57,13 @@ func Build() error {
 
 // Remove files generated at build-time
 func Clean() error {
-	return cleanDir(binPath)
+	if err := createDir(bin); err != nil {
+		return err
+	}
+	if err := cleanDir(bin); err != nil {
+		return err
+	}
+	return nil
 }
 
 // Go mod download

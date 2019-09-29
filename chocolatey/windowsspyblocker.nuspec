@@ -5,7 +5,7 @@
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>windowsspyblocker</id>
     <title>WindowsSpyBlocker</title>
-    <version>@APP_VERSION@</version>
+    <version>0.0.0</version>
     <authors>CrazyMax</authors>
     <owners>CrazyMax</owners>
     <summary>Block spying and tracking on Windows</summary>

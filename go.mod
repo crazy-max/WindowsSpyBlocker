@@ -14,12 +14,13 @@ require (
 	github.com/go-ole/go-ole v0.0.0-20170209151332-de8695c8edbf
 	github.com/hako/durafmt v0.0.0-20180520121703-7b7ae1e72ead
 	github.com/josephspurrier/goversioninfo v0.0.0-20190209210621-63e6d1acd3dd
-	github.com/kevinburke/go-bindata v3.13.0+incompatible
-	github.com/mattn/go-colorable v0.1.1 // indirect
-	github.com/mattn/go-isatty v0.0.7 // indirect
+	github.com/kevinburke/go-bindata v3.14.0+incompatible
+	github.com/magefile/mage v1.9.0
+	github.com/mattn/go-colorable v0.1.2 // indirect
+	github.com/mattn/go-isatty v0.0.9 // indirect
 	github.com/mcuadros/go-version v0.0.0-20190308113854-92cdf37c5b75
 	github.com/miekg/dns v1.1.9
 	github.com/pkg/errors v0.8.1
-	golang.org/x/sync v0.0.0-20190423024810-112230192c58 // indirect
-	golang.org/x/sys v0.0.0-20190502175342-a43fa875dd82
+	golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e // indirect
+	golang.org/x/sys v0.0.0-20190927073244-c990c680b611
 )

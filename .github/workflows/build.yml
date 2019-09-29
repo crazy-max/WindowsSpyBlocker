@@ -18,7 +18,7 @@ jobs:
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             echo ::set-output name=version::${GITHUB_REF#refs/tags/}
           else
-            echo ::set-output name=version::1.0.0
+            echo ::set-output name=version::0.0.0
           fi
         shell: bash
       -
@@ -36,25 +36,31 @@ jobs:
           echo "##[add-path]$(dirname $GITHUB_WORKSPACE)/bin/windows_386"
         shell: bash
       -
-        name: Set up JDK
-        uses: actions/setup-java@v1
-        with:
-          java-version: 11
-      -
         # https://github.com/actions/checkout
         name: Checkout
         uses: actions/checkout@v1
       -
-        name: Build
-        run: |
-          GOARCH=386 go get -u github.com/kevinburke/go-bindata/go-bindata
-          GOARCH=386 go get -u github.com/josephspurrier/goversioninfo/cmd/goversioninfo
-          ant -noinput -Dapp.version=${{ steps.prepare.outputs.version }} release
-          file bin/release/WindowsSpyBlocker.exe
-        env:
-          GO111MODULE: on
-          GOPROXY: https://goproxy.io
-        shell: bash
+        # https://github.com/crazy-max/ghaction-mage
+        name: Mage build
+        uses: crazy-max/ghaction-mage@master
+        with:
+          version: latest
+          args: build
+      -
+        # https://github.com/svenstaro/upx-action
+        name: UPX compress
+        uses: svenstaro/upx-action@v1-release
+        with:
+          file: bin/WindowsSpyBlocker.exe
+          args: -fq
+          strip: false
+      -
+        # https://github.com/crazy-max/ghaction-mage
+        name: Mage chocoPack
+        uses: crazy-max/ghaction-mage@master
+        with:
+          version: latest
+          args: chocoPack
       -
         # https://github.com/softprops/action-gh-release
         name: GitHub Release
@@ -62,14 +68,20 @@ jobs:
         if: success() && startsWith(github.ref, 'refs/tags/')
         with:
           draft: true
-          files: bin/release/*
+          files: |
+            bin/WindowsSpyBlocker.exe
+            bin/windowsspyblocker.${{ steps.prepare.outputs.version }}.nupkg
           name: ${{ steps.prepare.outputs.version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       -
         # https://github.com/crazy-max/ghaction-chocolatey
-        name: Chocolatey Release
+        name: Chocolatey Push
         uses: docker://crazymax/ghaction-chocolatey
         if: success() && startsWith(github.ref, 'refs/tags/')
         env:
-          INPUT_ARGS: push bin/release/windowsspyblocker.${{ steps.prepare.outputs.version }}.nupkg --source https://package.chocolatey.org --apikey ${{ secrets.CHOCO_API_KEY }} --acceptlicense --yes
+          INPUT_ARGS: |
+            push bin/windowsspyblocker.${{ steps.prepare.outputs.version }}.nupkg \
+              --source https://package.chocolatey.org \
+              --apikey ${{ secrets.CHOCO_API_KEY }} \
+              --acceptlicense --yes

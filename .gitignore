@@ -1,10 +1,10 @@
-# Intellij
 /.idea
 /*.iml
 
-# App
 /.dev
 /bin
 /*.syso
 /*.exe
+/app.conf
+/app.manifest
 /versioninfo.json

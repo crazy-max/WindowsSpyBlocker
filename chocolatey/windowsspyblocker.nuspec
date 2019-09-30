@@ -13,7 +13,7 @@
 
 The approach of this project is to capture and interpret network traffic 🚦 based on a set of tools. Depending on the interactions ⛓ between services and source or destination of traffic, rules are created and sorted by assignment.
 
-![](https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/.res/wsb-main-window.png)
+![](https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/doc/.res/usage/main-window.png)
 
 All kinds of contributions are welcome 🙌! The most basic way to show your support is to star ⭐ the project, or to raise issues 💬. But we're not gonna lie to each other, I'd rather you buy me a beer or two 🍻!
 

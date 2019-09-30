@@ -18,6 +18,7 @@ import (
 	"github.com/magefile/mage/sh"
 )
 
+// Default mage target
 var Default = Build
 
 var (

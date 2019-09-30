@@ -17,52 +17,12 @@
 
 The approach of this project is to capture and interpret network traffic :vertical_traffic_light: based on a set of tools. Depending on the interactions :chains: between services and source or destination of traffic, rules are created and sorted by assignment.
 
-![](.res/wsb-main-window.png)
-> Main window of WindowsSpyBlocker
+## Documentation
 
-Configuration file `app.conf` is generated at first launch :
-
-![](.res/wsb-root-folder.png)
-
-For more info, take a look at [Wiki](../../wiki).
-
-## Download
-
-WindowsSpyBlocker executable can be downloaded directly from [GitHub releases](https://github.com/crazy-max/WindowsSpyBlocker/releases/latest) or as a [Chocolate package](https://chocolatey.org/packages/windowsspyblocker) that will allow you to benefit from automatic updates.
-
-## Telemetry and data collection
-
-To capture and interpret network traffic, QEMU virtual machines are used on the server virtualization management platform [Proxmox VE](https://www.proxmox.com/en/) based on :
-
-* Windows 10 Pro 64bits with automatic updates enabled.
-* Windows 8.1 Pro 64bits with automatic updates enabled.
-* Windows 7 SP1 Pro 64bits with automatic updates enabled.
-
-Traffic dumps are cleaned monthly and compared with the current rules to add or remove some hosts or firewall rules.
-
-Tools used to capture traffic :
-
-* `qemu -net dump` : capture
-* [Wireshark](../../wiki/appDevWireshark) : capture + logs
-* [Sysmon](../../wiki/appDevSysmon) : capture + logs
-* [Proxifier](../../wiki/devProxifier) : logs
-
-The `data` folder contains the blocking rules based on domains or IPs detected during the capture process :
-
-* `data/<type>/extra.txt` : Block third party applications (Skype, Bing, Live, Outlook, NCSI, etc.)
-* `data/<type>/spy.txt` : Block Windows Spy / Telemetry **recommended**
-* `data/<type>/update.txt` : Block Windows Update
-* `data/hosts/[extra|spy|update]_v6.txt` : Handle IPv6 blocking for hosts
-
-[Firewall](../../wiki/dataFirewall) and [Hosts](../../wiki/dataHosts) data are the main types. The others are generated from these as :
-
-* [DNSCrypt](../../wiki/dataDNSCrypt) : a protocol for securing communications between a client and a DNS resolver.
-* [OpenWrt](../../wiki/dataOpenWrt) : an open source project used on embedded devices to route network traffic.
-* [P2P](../../wiki/dataP2P) : a plaintext IP data format from PeerGuardian.
-* [Proxifier](../../wiki/dataProxifier) : an advanced proxy client on Windows with a flexible rule system.
-* [simplewall](../../wiki/dataSimplewall) : a simple tool to configure Windows Filtering Platform (WFP).
-
-And about data collection, you can read the [Telemetry collection](../../wiki/miscTelemetry) page for more info.
+* [How it works?](doc/how-it-works.md)
+* [Usage](doc/usage.md)
+* [FAQ](doc/faq.md)
+* [Useful threads about telemetry collection](doc/telemetry-info.md)
 
 ## Projects using WindowsSpyBlocker
 

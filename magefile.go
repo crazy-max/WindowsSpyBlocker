@@ -37,7 +37,7 @@ var (
 	}
 )
 
-// Go build
+// Build Run go build
 func Build() error {
 	mg.Deps(Clean)
 	mg.Deps(Generate)
@@ -54,7 +54,7 @@ func Build() error {
 	return nil
 }
 
-// Remove files generated at build-time
+// Clean Remove files generated at build-time
 func Clean() error {
 	if err := createDir(binPath); err != nil {
 		return err
@@ -65,7 +65,7 @@ func Clean() error {
 	return nil
 }
 
-// Go mod download
+// Download Run go mod download
 func Download() error {
 
 	fmt.Println("⚙️ Go mod download...")
@@ -76,7 +76,7 @@ func Download() error {
 	return nil
 }
 
-// Go generate
+// Generate Run go generate
 func Generate() error {
 	mg.Deps(Download)
 	mg.Deps(appConf)
@@ -91,7 +91,7 @@ func Generate() error {
 	return nil
 }
 
-// Chocolatey package
+// ChocoPack Run choco pack
 func ChocoPack() error {
 	mg.Deps(ChocoPrepare)
 
@@ -114,7 +114,7 @@ func ChocoPack() error {
 	return nil
 }
 
-// Chocolatey prepare
+// ChocoPrepare Generate chocolatey files
 func ChocoPrepare() error {
 	fmt.Println("🔨 Generating Chocolatey files...")
 

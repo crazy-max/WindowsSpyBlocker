@@ -27,7 +27,7 @@ func init() {
 
 func main() {
 	color.New(color.FgHiWhite).Println(config.AppName + " " + config.AppVersion)
-	color.New(color.FgHiWhite).Println(config.AppUrl)
+	color.New(color.FgHiWhite).Println(config.AppURL)
 
 	latestVersion, err := app.GetLatestVersion()
 	if err != nil {
@@ -36,7 +36,7 @@ func main() {
 		color.New(color.FgHiGreen).Print("\nA new release is available : ")
 		color.New(color.FgHiGreen, color.Bold).Print(latestVersion)
 		color.New(color.FgHiGreen).Print("\nDownload : ")
-		color.New(color.FgHiGreen, color.Bold).Print(config.AppUrl + "/releases/latest\n")
+		color.New(color.FgHiGreen, color.Bold).Print(config.AppURL + "/releases/latest\n")
 	}
 
 	menuCommands := []menu.CommandOption{

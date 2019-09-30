@@ -142,12 +142,12 @@ func mergeExtIPs(rule string, ext string, firewallDataBuf []byte) error {
 	if ext == data.EXT_OPENWRT {
 		asCidr = true
 		outputPath = path.Join(pathu.Data, ext, rule, "firewall.user")
-		fileHead = fmt.Sprintf(string(config.Settings.DataTpl.Openwrt.Ip.Head), rule, config.AppUrl)
+		fileHead = fmt.Sprintf(string(config.Settings.DataTpl.Openwrt.Ip.Head), rule, config.AppURL)
 		fileIpValue = string(config.Settings.DataTpl.Openwrt.Ip.Value)
 	} else if ext == data.EXT_P2P {
 		asCidr = false
 		outputPath = path.Join(pathu.Data, ext, rule+".txt")
-		fileHead = fmt.Sprintf(string(config.Settings.DataTpl.P2p.Head), rule, config.AppUrl)
+		fileHead = fmt.Sprintf(string(config.Settings.DataTpl.P2p.Head), rule, config.AppURL)
 		fileIpValue = string(config.Settings.DataTpl.P2p.Value)
 	} else if ext == data.EXT_PROXIFIER {
 		asCidr = false
@@ -157,7 +157,7 @@ func mergeExtIPs(rule string, ext string, firewallDataBuf []byte) error {
 	} else if ext == data.EXT_SIMPLEWALL {
 		asCidr = false
 		outputPath = path.Join(pathu.Data, ext, rule, "blocklist.xml")
-		fileHead = fmt.Sprintf(string(config.Settings.DataTpl.Simplewall.Head), rule, config.AppUrl, timeu.CurrentTime.Format(time.RFC1123Z))
+		fileHead = fmt.Sprintf(string(config.Settings.DataTpl.Simplewall.Head), rule, config.AppURL, timeu.CurrentTime.Format(time.RFC1123Z))
 		fileIpValue = string(config.Settings.DataTpl.Simplewall.Value)
 	}
 
@@ -245,7 +245,7 @@ func mergeExtHosts(rule string, ext string, hostsDataBuf []byte) error {
 		asWildcard = true
 	} else if ext == data.EXT_OPENWRT {
 		outputPath = path.Join(pathu.Data, ext, rule, "dnsmasq.conf")
-		fileHead = fmt.Sprintf(string(config.Settings.DataTpl.Openwrt.Domains.Head), rule, config.AppUrl)
+		fileHead = fmt.Sprintf(string(config.Settings.DataTpl.Openwrt.Domains.Head), rule, config.AppURL)
 		fileValue = string(config.Settings.DataTpl.Openwrt.Domains.Value)
 		asWildcard = false
 	} else if ext == data.EXT_PROXIFIER {

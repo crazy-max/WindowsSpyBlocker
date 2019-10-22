@@ -218,7 +218,7 @@ func getWhatisIpAddress(httpClient http.Client, ip string) (string, error) {
 		return ipAddress, err
 	}
 
-	doc, err := goquery.NewDocumentFromResponse(resp)
+	doc, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
 		return ipAddress, err
 	}
@@ -252,7 +252,7 @@ func getDnsQueryIpAddress(httpClient http.Client, ip string) (string, error) {
 		return ipAddress, err
 	}
 
-	doc, err := goquery.NewDocumentFromResponse(resp)
+	doc, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
 		return ipAddress, err
 	}
@@ -270,7 +270,7 @@ func getDnsQueryIpAddress(httpClient http.Client, ip string) (string, error) {
 		return ipAddress, err
 	}
 
-	doc, err = goquery.NewDocumentFromResponse(resp)
+	doc, err = goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
 		return ipAddress, err
 	}

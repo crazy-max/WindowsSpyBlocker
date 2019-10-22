@@ -10,7 +10,7 @@ require (
 	github.com/cavaliercoder/grab v1.0.0
 	github.com/cevaris/ordered_map v0.0.0-20170213161328-531fd444821a
 	github.com/djherbis/times v1.2.0 // indirect
-	github.com/fatih/color v1.4.1
+	github.com/fatih/color v1.7.0
 	github.com/go-ole/go-ole v0.0.0-20170209151332-de8695c8edbf
 	github.com/hako/durafmt v0.0.0-20180520121703-7b7ae1e72ead
 	github.com/josephspurrier/goversioninfo v0.0.0-20190209210621-63e6d1acd3dd

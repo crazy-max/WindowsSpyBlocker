@@ -186,7 +186,14 @@ func extractEventLog(args ...string) (err error) {
 	print.Ok()
 
 	fmt.Print("Extracting events... ")
-	ef, err := evtx.New(strings.Replace(config.App.Sysmon.EvtxPath, "/", "\\", -1))
+	evtxFile, err := os.Open(config.App.Sysmon.EvtxPath)
+	if err != nil {
+		print.Error(err)
+		return nil
+	}
+	defer evtxFile.Close()
+
+	ef, err := evtx.New(evtxFile)
 	if err != nil {
 		print.Error(err)
 		return nil

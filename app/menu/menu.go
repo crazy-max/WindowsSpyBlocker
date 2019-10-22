@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/print"
-	"github.com/fatih/color"
+	"github.com/akyoto/color"
 )
 
 // CommandOption main struct to handle options for Description, and the function that should be called

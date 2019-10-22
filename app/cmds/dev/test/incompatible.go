@@ -6,7 +6,7 @@ import (
 
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/stringsu"
 
-	"github.com/fatih/color"
+	"github.com/akyoto/color"
 
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/data"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/print"

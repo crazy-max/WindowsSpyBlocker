@@ -14,7 +14,7 @@ import (
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/app"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/config"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/windows"
-	"github.com/fatih/color"
+"github.com/akyoto/color"
 	"github.com/mcuadros/go-version"
 )
 

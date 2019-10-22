@@ -4,7 +4,7 @@ import (
 	"github.com/crazy-max/WindowsSpyBlocker/app/cmds/telemetry/firewall"
 	"github.com/crazy-max/WindowsSpyBlocker/app/cmds/telemetry/ncsi"
 	"github.com/crazy-max/WindowsSpyBlocker/app/menu"
-	"github.com/fatih/color"
+	"github.com/akyoto/color"
 )
 
 // Menu of Telemetry

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/fatih/color"
+	"github.com/akyoto/color"
 	"github.com/hako/durafmt"
 )
 

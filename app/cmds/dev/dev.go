@@ -7,7 +7,7 @@ import (
 	"github.com/crazy-max/WindowsSpyBlocker/app/cmds/dev/test"
 	"github.com/crazy-max/WindowsSpyBlocker/app/cmds/dev/wireshark"
 	"github.com/crazy-max/WindowsSpyBlocker/app/menu"
-	"github.com/fatih/color"
+	"github.com/akyoto/color"
 )
 
 // Menu of Dev

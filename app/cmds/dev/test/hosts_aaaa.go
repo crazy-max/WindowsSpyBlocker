@@ -13,7 +13,7 @@ import (
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/pathu"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/print"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/timeu"
-	"github.com/fatih/color"
+	"github.com/akyoto/color"
 )
 
 func testHostsAAAALookup(args ...string) error {

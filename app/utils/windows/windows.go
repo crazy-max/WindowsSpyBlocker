@@ -8,7 +8,7 @@ import (
 	"unsafe"
 
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/print"
-	"github.com/fatih/color"
+	"github.com/akyoto/color"
 	"golang.org/x/sys/windows/registry"
 )
 

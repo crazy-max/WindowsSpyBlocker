@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/fatih/color"
+	"github.com/akyoto/color"
 )
 
 // Error printed in red color

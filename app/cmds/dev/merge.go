@@ -21,7 +21,7 @@ import (
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/print"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/stringsu"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/timeu"
-	"github.com/fatih/color"
+	"github.com/akyoto/color"
 )
 
 func merge(args ...string) (err error) {

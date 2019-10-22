@@ -16,7 +16,7 @@ import (
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/print"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/timeu"
 	"github.com/crazy-max/WindowsSpyBlocker/app/whois"
-	"github.com/fatih/color"
+	"github.com/akyoto/color"
 )
 
 func testFirewallIps(args ...string) error {

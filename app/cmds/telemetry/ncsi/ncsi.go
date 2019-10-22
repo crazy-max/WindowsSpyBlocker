@@ -12,7 +12,7 @@ import (
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/print"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/timeu"
 	"github.com/crazy-max/WindowsSpyBlocker/app/utils/windows"
-	"github.com/fatih/color"
+	"github.com/akyoto/color"
 	"github.com/miekg/dns"
 	"golang.org/x/sys/windows/registry"
 )

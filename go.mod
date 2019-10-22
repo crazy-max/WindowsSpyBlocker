@@ -14,7 +14,7 @@ require (
 	github.com/go-ole/go-ole v0.0.0-20170209151332-de8695c8edbf
 	github.com/hako/durafmt v0.0.0-20180520121703-7b7ae1e72ead
 	github.com/josephspurrier/goversioninfo v0.0.0-20190209210621-63e6d1acd3dd
-	github.com/kevinburke/go-bindata v3.14.0+incompatible
+	github.com/kevinburke/go-bindata v3.15.0+incompatible
 	github.com/magefile/mage v1.9.0
 	github.com/mattn/go-colorable v0.1.2 // indirect
 	github.com/mattn/go-isatty v0.0.9 // indirect

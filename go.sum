@@ -30,6 +30,8 @@ github.com/josephspurrier/goversioninfo v0.0.0-20190209210621-63e6d1acd3dd h1:Ki
 github.com/josephspurrier/goversioninfo v0.0.0-20190209210621-63e6d1acd3dd/go.mod h1:eJTEwMjXb7kZ633hO3Ln9mBUCOjX2+FlTljvpl9SYdE=
 github.com/kevinburke/go-bindata v3.15.0+incompatible h1:lQUrdQ9X1McRmbzn64vmAV48zyiFkCIZxlH7OEO67ww=
 github.com/kevinburke/go-bindata v3.15.0+incompatible/go.mod h1:/pEEZ72flUW2p0yi30bslSp9YqD9pysLxunQDdb2CPM=
+github.com/kevinburke/go-bindata v3.16.0+incompatible h1:TFzFZop2KxGhqNwsyjgmIh5JOrpG940MZlm5gNbxr8g=
+github.com/kevinburke/go-bindata v3.16.0+incompatible/go.mod h1:/pEEZ72flUW2p0yi30bslSp9YqD9pysLxunQDdb2CPM=
 github.com/kr/fs v0.1.0/go.mod h1:FFnZGqtBN9Gxj7eW1uZ42v5BccTP0vu6NEaFoC2HwRg=
 github.com/magefile/mage v1.9.0 h1:t3AU2wNwehMCW97vuqQLtw6puppWXHO+O2MHo5a50XE=
 github.com/magefile/mage v1.9.0/go.mod h1:z5UZb/iS3GoOSn0JgWuiw7dxlurVYTu+/jHXqQg881A=

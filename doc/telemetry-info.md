@@ -4,6 +4,8 @@ Useful links about telemetry data collection:
 
 * SiSyPHuS BSI Windows 10 Telemetry data ; [English](https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Cyber-Sicherheit/SiSyPHus/Workpackage4_Telemetry.pdf) (partially) and [German](https://www.bsi.bund.de/DE/Themen/Cyber-Sicherheit/Empfehlungen/SiSyPHuS_Win10/AP4/SiSyPHuS_AP4.html)
 * [MSWin10 GDPR Compliance](.res/MSWin10_GDPR_Compliance.pdf)
+* [Windows 10, version 1903, manage connection endpoints](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1903-endpoints)
+* [Windows 10, version 1903, connection endpoints for non-Enterprise editions](https://docs.microsoft.com/en-us/windows/privacy/windows-endpoints-1903-non-enterprise-editions)
 * [Windows 10, version 1809, manage connection endpoints](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1809-endpoints)
 * [Windows 10, version 1803, connection endpoints for non-Enterprise editions](https://docs.microsoft.com/en-us/windows/privacy/windows-endpoints-1803-non-enterprise-editions)
 * [Windows 10, version 1709, connection endpoints for non-Enterprise editions](https://docs.microsoft.com/en-us/windows/privacy/windows-endpoints-1709-non-enterprise-editions)

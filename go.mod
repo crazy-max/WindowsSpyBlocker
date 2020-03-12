@@ -16,7 +16,7 @@ require (
 	github.com/kevinburke/go-bindata v3.18.0+incompatible
 	github.com/magefile/mage v1.9.0
 	github.com/mcuadros/go-version v0.0.0-20190308113854-92cdf37c5b75
-	github.com/miekg/dns v1.1.27
+	github.com/miekg/dns v1.1.28
 	github.com/pkg/errors v0.9.1
 	golang.org/x/sys v0.0.0-20191025090151-53bf42e6b339
 )

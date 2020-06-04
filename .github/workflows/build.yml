@@ -97,7 +97,7 @@ jobs:
           args: chocoPush
       -
         name: VirusTotal Scan
-        uses: crazy-max/ghaction-virustotal@v1
+        uses: crazy-max/ghaction-virustotal@v2.0.1
         if: success() && startsWith(github.ref, 'refs/tags/')
         with:
           files: |

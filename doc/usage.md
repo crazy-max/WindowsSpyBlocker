@@ -11,6 +11,7 @@
 
 * Directly from [GitHub releases](https://github.com/crazy-max/WindowsSpyBlocker/releases/latest)
 * As a [Chocolate package](https://chocolatey.org/packages/windowsspyblocker) that will allow you to benefit from automatic updates
+* As a [Scoop](https://scoop.sh/) package (`windowsspyblocker`) that will allow you to benefit from automatic updates
 
 ## First launch
 

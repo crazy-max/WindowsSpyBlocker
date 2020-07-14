@@ -1,5 +1,3 @@
-github.com/0xrawsec/golang-evtx v1.2.3 h1:SlL3alC4o4DN9+Ke53kvQAgASlJyj6MjyyzJeOkN/do=
-github.com/0xrawsec/golang-evtx v1.2.3/go.mod h1:RD+lv9ndoM/7XwvS5XViI51yAp5PDtVVJf8FM6Muro0=
 github.com/0xrawsec/golang-evtx v1.2.4 h1:9ChVrqXWwZZ6NkN/xlWne32Qtkh23NSQYLJqH1DMMZ0=
 github.com/0xrawsec/golang-evtx v1.2.4/go.mod h1:RD+lv9ndoM/7XwvS5XViI51yAp5PDtVVJf8FM6Muro0=
 github.com/0xrawsec/golang-utils v1.1.0 h1:opQAwRONEfxOOl4nxhpPkXiTYgzAw0/wFATAffNjdII=

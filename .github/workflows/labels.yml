@@ -18,6 +18,6 @@ jobs:
       -
         name: Run Labeler
         if: success()
-        uses: crazy-max/ghaction-github-labeler@v2
+        uses: crazy-max/ghaction-github-labeler@v2.1.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

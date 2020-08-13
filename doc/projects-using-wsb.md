@@ -8,6 +8,7 @@
 * [FilterLists](https://filterlists.com/) : An independent, comprehensive directory of filter and host lists for advertisements, trackers, malware, and annoyances.
 * [LEDE Project](https://lede-project.org/) : A Linux operating system based on OpenWrt.
 * [Mikrotik hosts parser](https://github.com/tarampampam/mikrotik-hosts-parser) : An application that blocks "advertising" for routers based on RouterOS.
+* [NextDNS](https://github.com/nextdns) : Block ads, trackers, malware and phishing websites, cryptominers and more.  
 * [OpenWrt adblock package](https://github.com/openwrt/packages/tree/master/net/adblock/files) : DNS based ad/abuse domain blocking
 * [OPNsense](https://opnsense.org) : An open source, easy-to-use and easy-to-build HardenedBSD based firewall and routing platform.
 * [pi-hole](https://pi-hole.net/) : A black hole for Internet advertisements (designed for Raspberry Pi).

@@ -10,7 +10,7 @@ jobs:
     steps:
       -
         name: VirusTotal Monitor Scan
-        uses: crazy-max/ghaction-virustotal@v2.2.0
+        uses: crazy-max/ghaction-virustotal@v2.2.1
         with:
           vt_api_key: ${{ secrets.VT_MONITOR_API_KEY }}
           vt_monitor: true
@@ -21,7 +21,7 @@ jobs:
             WindowsSpyBlocker.exe
       -
         name: VirusTotal Scan
-        uses: crazy-max/ghaction-virustotal@v2.2.0
+        uses: crazy-max/ghaction-virustotal@v2.2.1
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           update_release_body: true

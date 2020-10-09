@@ -4,7 +4,7 @@ go 1.15
 
 require (
 	github.com/0xrawsec/golang-evtx v1.2.4
-	github.com/PuerkitoBio/goquery v1.5.1
+	github.com/PuerkitoBio/goquery v1.6.0
 	github.com/akyoto/color v1.8.11
 	github.com/cavaliercoder/grab v1.0.0
 	github.com/cevaris/ordered_map v0.0.0-20190319150403-3adeae072e73

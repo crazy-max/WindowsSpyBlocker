@@ -29,8 +29,8 @@ github.com/hako/durafmt v0.0.0-20180520121703-7b7ae1e72ead h1:Y9WOGZY2nw5ksbEf5A
 github.com/hako/durafmt v0.0.0-20180520121703-7b7ae1e72ead/go.mod h1:5Scbynm8dF1XAPwIwkGPqzkM/shndPm79Jd1003hTjE=
 github.com/josephspurrier/goversioninfo v1.2.0 h1:tpLHXAxLHKHg/dCU2AAYx08A4m+v9/CWg6+WUvTF4uQ=
 github.com/josephspurrier/goversioninfo v1.2.0/go.mod h1:AGP2a+Y/OVJZ+s6XM4IwFUpkETwvn0orYurY8qpw1+0=
-github.com/kevinburke/go-bindata v3.21.0+incompatible h1:baK7hwFJDlAHrOqmE9U3u8tow1Uc5ihN9E/b7djcK2g=
-github.com/kevinburke/go-bindata v3.21.0+incompatible/go.mod h1:/pEEZ72flUW2p0yi30bslSp9YqD9pysLxunQDdb2CPM=
+github.com/kevinburke/go-bindata v3.22.0+incompatible h1:/JmqEhIWQ7GRScV0WjX/0tqBrC5D21ALg0H0U/KZ/ts=
+github.com/kevinburke/go-bindata v3.22.0+incompatible/go.mod h1:/pEEZ72flUW2p0yi30bslSp9YqD9pysLxunQDdb2CPM=
 github.com/kr/fs v0.1.0/go.mod h1:FFnZGqtBN9Gxj7eW1uZ42v5BccTP0vu6NEaFoC2HwRg=
 github.com/magefile/mage v1.10.0 h1:3HiXzCUY12kh9bIuyXShaVe529fJfyqoVM42o/uom2g=
 github.com/magefile/mage v1.10.0/go.mod h1:z5UZb/iS3GoOSn0JgWuiw7dxlurVYTu+/jHXqQg881A=

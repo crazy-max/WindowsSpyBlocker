@@ -39,7 +39,7 @@ jobs:
         shell: bash
       -
         name: Checkout
-        uses: actions/checkout@v2.3.3
+        uses: actions/checkout@v2.3.4
       -
         name: Cache Go modules
         uses: actions/cache@v2

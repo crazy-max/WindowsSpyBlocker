@@ -1,5 +1,5 @@
-github.com/0xrawsec/golang-evtx v1.2.4 h1:9ChVrqXWwZZ6NkN/xlWne32Qtkh23NSQYLJqH1DMMZ0=
-github.com/0xrawsec/golang-evtx v1.2.4/go.mod h1:RD+lv9ndoM/7XwvS5XViI51yAp5PDtVVJf8FM6Muro0=
+github.com/0xrawsec/golang-evtx v1.2.5 h1:PSri/6YSXlvcEZT1Ib6KNRauxpf74Bk94TJWpQbCE4Y=
+github.com/0xrawsec/golang-evtx v1.2.5/go.mod h1:RD+lv9ndoM/7XwvS5XViI51yAp5PDtVVJf8FM6Muro0=
 github.com/0xrawsec/golang-utils v1.1.0 h1:opQAwRONEfxOOl4nxhpPkXiTYgzAw0/wFATAffNjdII=
 github.com/0xrawsec/golang-utils v1.1.0/go.mod h1:DADTtCFY10qXjWmUVhhJqQIZdSweaHH4soYUDEi8mj0=
 github.com/PuerkitoBio/goquery v1.6.0 h1:j7taAbelrdcsOlGeMenZxc2AWXD5fieT1/znArdnx94=

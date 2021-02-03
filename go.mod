@@ -3,7 +3,7 @@ module github.com/crazy-max/WindowsSpyBlocker
 go 1.15
 
 require (
-	github.com/0xrawsec/golang-evtx v1.2.5
+	github.com/0xrawsec/golang-evtx v1.2.7
 	github.com/PuerkitoBio/goquery v1.6.1
 	github.com/akyoto/color v1.8.11
 	github.com/cavaliercoder/grab v1.0.0

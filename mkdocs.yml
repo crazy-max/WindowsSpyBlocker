@@ -78,6 +78,7 @@ plugins:
         - "Dockerfile"
   - git-revision-date-localized:
       type: iso_datetime
+      enable_creation_date: true
   - macros
   - search:
       prebuild_index: python

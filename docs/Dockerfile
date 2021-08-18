@@ -6,6 +6,7 @@ RUN apk add --no-cache \
     openssh \
   && apk add --no-cache --virtual .build gcc musl-dev \
   && pip install --no-cache-dir \
+    'lunr' \
     'markdown-include' \
     'mkdocs-awesome-pages-plugin' \
     'mkdocs-exclude' \

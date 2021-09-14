@@ -379,3 +379,14 @@
 0.0.0.0 win1710.ipv6.microsoft.com
 0.0.0.0 win8.ipv6.microsoft.com
 0.0.0.0 ztd.dds.microsoft.com
+0.0.0.0 go.microsoft.com
+0.0.0.0 checkappexec.microsoft.com
+0.0.0.0 prod.do.dsp.mp.microsoft.com
+0.0.0.0 dmd.metaservices.microsoft.com
+0.0.0.0 smartscreen.microsoft.com
+0.0.0.0 officeclient.microsoft.com
+0.0.0.0 cp501.prod.do.dsp.mp.microsoft.com
+0.0.0.0 geover.prod.do.dsp.mp.microsoft.com                              
+0.0.0.0 nf.smartscreen.microsoft.com                              
+0.0.0.0 kv501.prod.do.dsp.mp.microsoft.com
+0.0.0.0 geo.prod.do.dsp.mp.microsoft.com

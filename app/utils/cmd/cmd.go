@@ -4,7 +4,8 @@ import (
 	"bytes"
 	"os/exec"
 	"strings"
-	"syscall"
+
+	"golang.org/x/sys/windows"
 )
 
 // Options of command
@@ -32,7 +33,7 @@ func Exec(options Options) (Result, error) {
 	command.Stdout = commandStdout
 	commandStderr := &bytes.Buffer{}
 	command.Stderr = commandStderr
-	command.SysProcAttr = &syscall.SysProcAttr{HideWindow: options.HideWindow}
+	command.SysProcAttr = &windows.SysProcAttr{HideWindow: options.HideWindow}
 
 	if options.WorkingDir != "" {
 		command.Dir = options.WorkingDir
@@ -43,7 +44,7 @@ func Exec(options Options) (Result, error) {
 	}
 
 	command.Wait()
-	waitStatus := command.ProcessState.Sys().(syscall.WaitStatus)
+	waitStatus := command.ProcessState.Sys().(windows.WaitStatus)
 
 	result.ExitCode = waitStatus.ExitCode
 	result.Stdout = strings.TrimSpace(commandStdout.String())

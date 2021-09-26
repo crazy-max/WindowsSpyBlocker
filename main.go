@@ -1,3 +1,6 @@
+//go:build windows
+// +build windows
+
 //go:generate go install github.com/kevinburke/go-bindata/go-bindata
 //go:generate go-bindata -pkg bindata -o app/bindata/bindata.go app/settings.json data/... app.conf
 //go:generate go install github.com/josephspurrier/goversioninfo/cmd/goversioninfo

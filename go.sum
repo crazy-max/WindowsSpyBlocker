@@ -8,12 +8,13 @@ github.com/PuerkitoBio/goquery v1.8.0 h1:PJTF7AmFCFKk1N6V6jmKfrNH9tV5pNE6lZMkG0g
 github.com/PuerkitoBio/goquery v1.8.0/go.mod h1:ypIiRMtY7COPGk+I/YbZLbxsxn9g5ejnI2HSMtkjZvI=
 github.com/akavel/rsrc v0.10.2 h1:Zxm8V5eI1hW4gGaYsJQUhxpjkENuG91ki8B4zCrvEsw=
 github.com/akavel/rsrc v0.10.2/go.mod h1:uLoCtb9J+EyAqh+26kdrTgmzRBFPGOolLWKpdxkKq+c=
-github.com/akyoto/color v1.8.11 h1:uCQi+uRyngo1cJhJSv28PQmduGFiOAGNF6F9MFoRDek=
-github.com/akyoto/color v1.8.11/go.mod h1:Q77HnNKrgGSfXOpkR7cuyazaOXQsKLWKbDPh2cy+jto=
+github.com/akyoto/color v1.8.12 h1:7F/iF/POG6z+oppoGYWO6UOx8E2ZAypANO9rsfsBuHI=
+github.com/akyoto/color v1.8.12/go.mod h1:rG1eiYoSE+arV6oLuGuuekPtgujUlIErWeqqM13pVoA=
 github.com/akyoto/colorable v0.1.7 h1:ge91E25hiOiT/Zu47ij/rTO3cks7wMlTrcQspua1hFM=
 github.com/akyoto/colorable v0.1.7/go.mod h1:zlc1+Es4DyoXzDdbKiSfvdM6R/DsWS8bFi4RHigkuu4=
-github.com/akyoto/tty v0.1.3 h1:AdnLETzgooimWLvoBQLn5bT1j+i0yiB4E596BfFKnmA=
 github.com/akyoto/tty v0.1.3/go.mod h1:+VlbvviCaiwhS4oGpO+iBtC0lYG1ilIs3ZhUnT1Ppgo=
+github.com/akyoto/tty v0.1.4 h1:TELbnAmrPTIrUJyuBLhrOSCcBnklC2fh0YeCTjksiDE=
+github.com/akyoto/tty v0.1.4/go.mod h1:fkWwtA4F5Cq9kiQSlWdkPy5kAyySGYqalWyaRKn3zHo=
 github.com/andybalholm/cascadia v1.3.1 h1:nhxRkql1kdYCc8Snf7D5/D3spOX+dBgjA6u8x004T2c=
 github.com/andybalholm/cascadia v1.3.1/go.mod h1:R4bJ1UQfqADjvDa4P6HZHLh/3OxWWEqc0Sk8XGwHqvA=
 github.com/cavaliercoder/grab v1.0.0 h1:H6VQ1NiLO7AvXM6ZyaInnoZrRLeo2FoUTQEcXln4bvQ=
@@ -69,8 +70,8 @@ golang.org/x/sys v0.0.0-20191025090151-53bf42e6b339/go.mod h1:h1NjWce9XRLGQEsW7w
 golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20210303074136-134d130e1a04/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20210423082822-04245dca01da/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
-golang.org/x/sys v0.0.0-20210925032602-92d5a993a665 h1:QOQNt6vCjMpXE7JSK5VvAzJC1byuN3FgTNSBwf+CJgI=
-golang.org/x/sys v0.0.0-20210925032602-92d5a993a665/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+golang.org/x/sys v0.0.0-20211117180635-dee7805ff2e1 h1:kwrAHlwJ0DUBZwQ238v+Uod/3eZ8B2K5rYsUHBQvzmI=
+golang.org/x/sys v0.0.0-20211117180635-dee7805ff2e1/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=
 golang.org/x/text v0.3.2/go.mod h1:bEr9sfX3Q8Zfm5fL9x+3itogRgK3+ptLWKqgva+5dAk=

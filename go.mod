@@ -12,7 +12,7 @@ require (
 	github.com/go-ole/go-ole v1.2.6
 	github.com/hako/durafmt v0.0.0-20210608085754-5c1018a4e16b
 	github.com/josephspurrier/goversioninfo v1.3.0
-	github.com/kevinburke/go-bindata v3.22.0+incompatible
+	github.com/kevinburke/go-bindata v3.23.0+incompatible
 	github.com/magefile/mage v1.12.1
 	github.com/mcuadros/go-version v0.0.0-20190830083331-035f6764e8d2
 	github.com/miekg/dns v1.1.47

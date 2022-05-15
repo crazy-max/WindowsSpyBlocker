@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cavaliercoder/grab"
+	"github.com/cavaliergopher/grab/v3"
 )
 
 // GetCIDRFromIPRange converts IP range to CIDR
@@ -77,27 +77,30 @@ func GetIpsFromIPRange(ipRange string) ([]string, error) {
 
 // DownloadFile downloads a file and display status
 func DownloadFile(filename string, url string) error {
-	req, err := grab.NewRequest(url)
+	client := grab.NewClient()
+	req, err := grab.NewRequest(filename, url)
 	if err != nil {
 		return err
 	}
-	req.Filename = filename
 
-	respch := grab.DefaultClient.DoAsync(req)
-	resp := <-respch
+	resp := client.Do(req)
+	t := time.NewTicker(200 * time.Millisecond)
+	defer t.Stop()
 
-	ticker := time.NewTicker(200 * time.Millisecond)
-	for range ticker.C {
-		if resp.IsComplete() {
-			if resp.Error != nil {
-				return resp.Error
-			}
-			break
+Loop:
+	for {
+		select {
+		case <-t.C:
+			fmt.Print(".")
+		case <-resp.Done:
+			break Loop
 		}
-		fmt.Print(".")
 	}
 
-	ticker.Stop()
+	if err := resp.Err(); err != nil {
+		return err
+	}
+
 	return nil
 }
 

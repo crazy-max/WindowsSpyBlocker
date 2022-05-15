@@ -6,9 +6,8 @@ require (
 	github.com/0xrawsec/golang-evtx v1.2.9
 	github.com/PuerkitoBio/goquery v1.8.0
 	github.com/akyoto/color v1.8.12
-	github.com/cavaliercoder/grab v1.0.0
+	github.com/cavaliergopher/grab/v3 v3.0.1
 	github.com/cevaris/ordered_map v0.0.0-20190319150403-3adeae072e73
-	github.com/djherbis/times v1.5.0 // indirect
 	github.com/go-ole/go-ole v1.2.6
 	github.com/hako/durafmt v0.0.0-20210608085754-5c1018a4e16b
 	github.com/josephspurrier/goversioninfo v1.4.0

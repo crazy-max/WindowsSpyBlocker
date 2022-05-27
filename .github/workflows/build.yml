@@ -63,7 +63,7 @@ jobs:
           args: build
       -
         name: Mage chocoPack
-        uses: crazy-max/ghaction-mage@v1
+        uses: crazy-max/ghaction-mage@v2
         if: success()
         with:
           version: latest
@@ -90,7 +90,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       -
         name: Mage chocoPush
-        uses: crazy-max/ghaction-mage@v1
+        uses: crazy-max/ghaction-mage@v2
         if: success() && startsWith(github.ref, 'refs/tags/')
         env:
           CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}

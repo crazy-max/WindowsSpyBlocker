@@ -57,7 +57,7 @@ jobs:
           go-version: 1.17
       -
         name: Mage build
-        uses: magefile/mage-action@v1
+        uses: magefile/mage-action@v2
         with:
           version: latest
           args: build

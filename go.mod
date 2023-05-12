@@ -12,7 +12,7 @@ require (
 	github.com/hako/durafmt v0.0.0-20210608085754-5c1018a4e16b
 	github.com/josephspurrier/goversioninfo v1.4.0
 	github.com/kevinburke/go-bindata v3.24.0+incompatible
-	github.com/magefile/mage v1.14.0
+	github.com/magefile/mage v1.15.0
 	github.com/mcuadros/go-version v0.0.0-20190830083331-035f6764e8d2
 	github.com/miekg/dns v1.1.50
 	github.com/pkg/errors v0.9.1

@@ -1,0 +1,7 @@
+.md-header-nav__title {
+  font-size: .85rem;
+}
+
+.md-typeset__table code {
+  word-break: normal;
+}

@@ -25,7 +25,7 @@ require (
 	github.com/akyoto/colorable v0.1.7 // indirect
 	github.com/akyoto/tty v0.1.4 // indirect
 	github.com/andybalholm/cascadia v1.3.3 // indirect
-	github.com/josephspurrier/goversioninfo v1.4.0 // indirect
+	github.com/josephspurrier/goversioninfo v1.7.0 // indirect
 	github.com/kevinburke/go-bindata v3.24.0+incompatible // indirect
 	github.com/thedevsaddam/gojsonq/v2 v2.5.2 // indirect
 	golang.org/x/mod v0.31.0 // indirect

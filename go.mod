@@ -4,7 +4,7 @@ go 1.26.0
 
 require (
 	github.com/0xrawsec/golang-evtx v1.2.9
-	github.com/PuerkitoBio/goquery v1.12.0
+	github.com/PuerkitoBio/goquery v1.13.0
 	github.com/VirusTotal/vt-go v1.1.0
 	github.com/akyoto/color v1.8.12
 	github.com/cavaliergopher/grab/v3 v3.0.1
@@ -24,12 +24,12 @@ require (
 	github.com/akavel/rsrc v0.10.2 // indirect
 	github.com/akyoto/colorable v0.1.7 // indirect
 	github.com/akyoto/tty v0.1.4 // indirect
-	github.com/andybalholm/cascadia v1.3.3 // indirect
+	github.com/andybalholm/cascadia v1.3.4 // indirect
 	github.com/josephspurrier/goversioninfo v1.7.0 // indirect
 	github.com/kevinburke/go-bindata v3.24.0+incompatible // indirect
 	github.com/thedevsaddam/gojsonq/v2 v2.5.2 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
-	golang.org/x/net v0.57.0 // indirect
+	golang.org/x/net v0.58.0 // indirect
 )
 
 tool (
